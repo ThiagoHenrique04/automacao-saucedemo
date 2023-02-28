@@ -1,0 +1,37 @@
+package metodos;
+
+import static org.junit.Assert.assertEquals;
+
+import org.openqa.selenium.By;
+
+import driver.Drivers;
+
+public class Metodos extends Drivers {
+
+	
+	public void escrever(By elemento, String texto) {
+		try {
+			driver.findElement(elemento).sendKeys(texto);
+		} catch (Exception e) {
+			System.out.println("Erro ao escrever no elemento" + elemento);
+		}
+	}
+
+	public void clicar(By elemento) {
+		try {
+			driver.findElement(elemento).click();
+
+		} catch (Exception e) {
+			System.out.println("Erro ao clicar no elemento" + elemento);
+		}
+	}
+	
+	public void currentUrl(String urlDesejada){
+		try {
+		assertEquals(urlDesejada, driver.getCurrentUrl());
+	}catch(Exception e) {
+		System.out.println("Erro ao validar atual url" + urlDesejada);
+	}
+
+}
+	}

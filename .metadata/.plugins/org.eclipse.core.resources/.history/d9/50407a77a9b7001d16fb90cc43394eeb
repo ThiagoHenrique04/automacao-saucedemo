@@ -1,0 +1,62 @@
+package steps;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import metodos.Metodos;
+import runner.Executa;
+
+public class LoginTeste {
+
+	Metodos metodos = new Metodos()
+	
+	@Given("que esteja na tela de login")
+	public void queEstejaNaTelaDeLogin() {
+	Executa.abrirNavegador();
+	}
+
+	@Given("preencher usuario")
+	public void preencherUsuario() {
+	}
+
+	@Given("preencher a senha")
+	public void preencherASenha() {
+	}
+
+	@When("realizar o login")
+	public void realizarOLogin() {
+	}
+
+	@Then("login realizado com sucesso")
+	public void loginRealizadoComSucesso() {
+	}
+
+	@Given("preencher usuario bloqueado")
+	public void preencherUsuarioBloqueado() {
+	}
+
+	@Then("sistema apresenta mesnsagem de usuario bloqueado")
+	public void sistemaApresentaMesnsagemDeUsuarioBloqueado() {
+	}
+
+	@Given("preencher usuario invalido")
+	public void preencherUsuarioInvalido() {
+	}
+
+	@Given("preencher a senha invalida")
+	public void preencherASenhaInvalida() {
+	}
+
+	@Then("sistema apresenta mesnsagem de usuario e senha invalida")
+	public void sistemaApresentaMesnsagemDeUsuarioESenhaInvalida() {
+	}
+
+	@Given("nao preencher nenhum dado")
+	public void naoPreencherNenhumDado() {
+	}
+
+	@Then("sistema apresenta mesnsagem dado em branco")
+	public void sistemaApresentaMesnsagemDadoEmBranco() {
+	}
+
+}

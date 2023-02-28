@@ -1,0 +1,9 @@
+package utils;
+
+public class MassaDeDados {
+
+	String standard_user = "standard_user";
+	String locked_out_user = "locked_out_user";
+	String problem_user = "problem_user";
+	String performance_glitch_user = "performance_glitch_user";
+}
